@@ -1,15 +1,15 @@
-# TestComponent
+# Contact
 
 <!-- STORY -->
 
 ## Introduction
 
-TestComponent is an easy-to-use component.
+Contact is an easy-to-use component.
 
 ## Usage
 
 ```javascript
-import { TestComponent } from 'some-package-name';
+import { Contact } from 'some-package-name';
 ```
 
 ## Example use
@@ -18,7 +18,7 @@ import { TestComponent } from 'some-package-name';
 const myPage = props => {
   return (
     <main>
-      <TestComponent />
+      <Contact />
     </main>
   );
 };
