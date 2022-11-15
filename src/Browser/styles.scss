@@ -10,3 +10,35 @@ a:hover{
 a:active{
     text-decoration: none;
 }
+
+.fontHeader {
+    font-family: 'PT Mono', swap;
+    font-weight: bold;
+    color:rgb(175, 175, 175);
+}
+
+.fontFooter {
+    font-family: 'PT Mono', swap;
+    text-align:center;
+    color:rgb(175, 175, 175);
+}
+
+h1 {
+    text-align:center;
+    padding: 2%;
+    font-weight: bold;
+}
+
+.collage {
+    border:solid rgb(19, 19, 19);;
+    margin:2%;
+    
+}
+.collageHead {
+    margin-left:5%;
+    font-size:160%;
+    color:rgb(175, 175, 175);
+}
+.background {
+    background-color: rgb(37, 37, 37);
+}

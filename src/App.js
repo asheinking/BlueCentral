@@ -28,7 +28,7 @@ export default function App() {
       window.addEventListener('resize', handleResize)
 
   })
-  return isPhone ? <PHome /> : <OverlayNav />
+  return <OverlayNav />//isPhone ? <PHome /> : <OverlayNav />
 }
 /*
 class App extends Component {
