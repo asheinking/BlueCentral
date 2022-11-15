@@ -23,6 +23,15 @@
   align-items:center;
 }
 
+.App-header-mobile {
+  width:100%;
+  background-color:slateblue;
+  display:flex;
+  justify-content:space-between;
+  max-height:5vh;
+  align-items:center;
+}
+
 .Left-name {
   display:flex;
   flex-direction: row;
