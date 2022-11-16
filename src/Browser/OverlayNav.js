@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import About from './About'
 import Experience from './Experience'
 import Contact from './Contact'
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './styles.scss'
 
 export default function OverlayNav() {

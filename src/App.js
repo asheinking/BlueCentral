@@ -1,19 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import React, {Component, useState} from 'react';
+import React, {} from 'react';
 import OverlayNav from './Browser/OverlayNav'
-import PHome from './Phone/PHome.js'
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
-import About from './components/About'
-import Contact from './components/Contact'
-import Experience from './components/Experience'
-import HomePage from './components/HomePage'
-import HomeIcon from '@mui/icons-material/Home';
-import IconButton from "@material-ui/core/IconButton";
-import { createRouteLoader } from 'next/dist/client/route-loader';
-import {isMobile} from 'react-device-detect';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 
 
 
