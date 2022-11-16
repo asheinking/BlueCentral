@@ -1,6 +1,7 @@
 import './App.css';
 import React, {} from 'react';
 import OverlayNav from './Browser/OverlayNav'
+import POverlayNav from './Phone/POverlayNav'
 
 
 
@@ -15,7 +16,7 @@ export default function App() {
       window.addEventListener('resize', handleResize)
 
   })
-  return <OverlayNav />//isPhone ? <PHome /> : <OverlayNav />
+  return isPhone ? <POverlayNav /> : <OverlayNav />
 }
 /*
 class App extends Component {

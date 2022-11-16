@@ -17,7 +17,7 @@ export default function OverlayNav() {
                     <Nav className="me-auto">
                         <Link className='link' to={'/'}><Nav.Link className="link"href="/">About</Nav.Link></Link>
                         <Link to={'/Experience'}><Nav.Link href="/Experience">Experience</Nav.Link></Link>
-                        <Link to={"/Contact"}><Nav.Link href="Contact">Contact</Nav.Link></Link>
+                        <Link to={"/Contact"}><Nav.Link href="/Contact">Contact</Nav.Link></Link>
                     </Nav>
                 </Container>
             </Navbar>
