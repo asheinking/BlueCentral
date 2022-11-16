@@ -1,6 +1,8 @@
 
 export default function Experience() {
     return(
-        <h1>SLKJFDLKSDJFLK</h1>
+        <div className="resumeContainer background">
+            <img className="resume" src="./Resume.png"/>
+        </div>
     )
 }
