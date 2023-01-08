@@ -13,12 +13,13 @@ export default function POverlayNav() {
             <Navbar bg="primary" variant="dark">
                 <Container>
                     <Navbar.Brand href="/">AH</Navbar.Brand>
-                    <NavDropdown className="me-auto" title="Dropdown" id="basic-nav-dropdown">
-                    <Link className='link' to={'/'}><NavDropdown.Item href="/">About</NavDropdown.Item></Link>
-                    <Link to={'/Experience'}><NavDropdown.Item href="/Experience">Experience</NavDropdown.Item></Link>
-                    <Link to={"/Contact"}><NavDropdown.Item href="/Contact">Contact</NavDropdown.Item></Link>
-                    </NavDropdown>
-                   
+                    <Nav>
+                        <NavDropdown className="me-auto justify-content-end" title="image" id="basic-nav-dropdown">
+                            <Link className='link' to={'/'}><NavDropdown.Item href="/">About</NavDropdown.Item></Link>
+                            <Link to={'/Experience'}><NavDropdown.Item href="/Experience">Experience</NavDropdown.Item></Link>
+                            <Link to={"/Contact"}><NavDropdown.Item href="/Contact">Contact</NavDropdown.Item></Link>
+                        </NavDropdown>
+                    </Nav>
                 </Container>
             </Navbar>
             <Routes exact path='/'>

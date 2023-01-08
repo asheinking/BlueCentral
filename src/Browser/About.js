@@ -32,7 +32,7 @@ export default function Home() {
             <p className="fontFooter">For most of my life I have been extremely passionate about all things computer related, and even built my first computer <br />
                 when I was in just 7th grade. This was just me getting my foot into the door however because I would later take all the coding classes <br />
                 my high school had to offer (which sadly was not many), which brought me to being a Computer Science major. <br />
-                Most people say when going to college that everyone changes their major at least once, however I am lucky to be able to say I knew the route <br />
+                Most people say when going to college that everyone changes their major at least once, however I am lucky to be able to say I knew the route
                 I wanted to go down since I was in middle school.</p>
             <br /> <br />
             <Row>

@@ -3,7 +3,6 @@ import React, {} from 'react';
 import OverlayNav from './Browser/OverlayNav'
 import POverlayNav from './Phone/POverlayNav'
 
-// test
 
 export default function App() {
   var isPhone = window.matchMedia("(max-width: 500px)").matches;

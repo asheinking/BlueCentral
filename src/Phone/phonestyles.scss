@@ -1,9 +1,16 @@
 
 .background{
     background-color: rgb(37, 37, 37);
-    height:100vh;
+    height:100%;
 }
 .resume {
     max-width:80%;
     height:fit-content;
+}
+
+.phoneCard {
+    max-width:75% !important;
+}
+.phoneCardRow{
+    justify-content:center;
 }
