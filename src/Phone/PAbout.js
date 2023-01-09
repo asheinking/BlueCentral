@@ -23,7 +23,7 @@ export default function PAbout() {
 
         <div className="background">
             {console.log("triggered")}
-            <h1 className="fontHeader">Greetings! I am Alex Heinking</h1>
+            <h1 className="fontHeader">Salutations! I am Alex Heinking.</h1>
             <p className="fontFooter">I am a Junior studying Computer Science at Kansas State University.</p>
             <p className="fontFooter">While my studies at Kansas State have been largely limited to C#, I recently completed an internship with Burns & McDonnell <br />
             that highlighted javascript, particularly the Angular framework. Branching off of that experience I have built this website using the React framework <br />

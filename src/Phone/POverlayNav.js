@@ -24,7 +24,7 @@ export default function POverlayNav() {
 
             <Navbar collapseOnSelect key={"sm"} bg="primary" expand={"sm"} >
                 <Container fluid>
-                    <Navbar.Brand href="/">AH</Navbar.Brand>
+                    <Navbar.Brand className="phoneBrand" href="/">AH</Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`}
                     onClick={toggleMenu}
                     />
@@ -39,15 +39,15 @@ export default function POverlayNav() {
                         collapseOnSelect
                     >
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title style={{ font: "weight bold" }} id={`offcanvasNavbarLabel-expand-sm`}>
+                            <Offcanvas.Title className='offHeader' id={`offcanvasNavbarLabel-expand-sm`}>
                                 Alex Heinking
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Link className='link' to={'/'}><Nav.Link onClick={handleClose}  href="/">About</Nav.Link></Link>
-                                <Link to={'/Experience'}><Nav.Link onClick={handleClose} href="/Experience">Experience</Nav.Link></Link>
-                                <Link to={"/Contact"}><Nav.Link onClick={handleClose} href="/Contact">Contact</Nav.Link></Link>
+                                <Link className='link'  to={'/Experience'}><Nav.Link onClick={handleClose} href="/Experience">Experience</Nav.Link></Link>
+                                <Link className='link' to={"/Contact"}><Nav.Link onClick={handleClose} href="/Contact">Contact</Nav.Link></Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

@@ -23,12 +23,12 @@ export default function Home() {
     };
     return (
         <div className="background">
-            <h1 className="fontHeader">Greetings! I am Alex Heinking</h1>
+            <h1 className="fontHeader">Greetings! I am Alex Heinking.</h1>
             <p className="fontFooter">I am a Junior studying Computer Science at Kansas State University.</p>
-            <p className="fontFooter">While my studies at my University have been largely limited to C#, I recently completed an internship with Burns & McDonnell <br />
+            <p className="fontFooter">While my studies at Kansas State have been largely limited to C#, I recently completed an internship with Burns & McDonnell <br />
             that highlighted javascript, particularly the Angular framework. Branching off of that experience I have built this website using the React framework <br />
             to get exposed to different frameworks that are applied in real world jobs.</p>
-            <p className="fontFooter">Originally I am from Shawnee, Kansas where I was born and raised in a family of four, and where I grauated from Mill Valley Highschool.</p>
+            <p className="fontFooter">I am from Shawnee, Kansas where I was born and raised in a family of four, and where I grauated from Mill Valley Highschool in 2020.</p>
             <p className="fontFooter">For most of my life I have been extremely passionate about all things computer related, and even built my first computer <br />
                 when I was in just 7th grade. This was just me getting my foot into the door however because I would later take all the coding classes <br />
                 my high school had to offer (which sadly was not many), which brought me to being a Computer Science major. <br />
