@@ -45,9 +45,9 @@ export default function POverlayNav() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link onClick={handleClose}  href="/">About</Nav.Link>
-                                <Nav.Link onClick={handleClose} href="/Experience">Experience</Nav.Link>
-                                <Nav.Link onClick={handleClose} href="/Contact">Contact</Nav.Link>
+                                <Link className='link' to={'/'}><Nav.Link onClick={handleClose}  href="/">About</Nav.Link></Link>
+                                <Link to={'/Experience'}><Nav.Link onClick={handleClose} href="/Experience">Experience</Nav.Link></Link>
+                                <Link to={"/Contact"}><Nav.Link onClick={handleClose} href="/Contact">Contact</Nav.Link></Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
