@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import PAbout from './PAbout'
-import PExperience from './PExperience'
+import PResume from './PResume'
 import PContact from './PContact'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -46,8 +46,9 @@ export default function POverlayNav() {
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Link className='link' to={'/'}><Nav.Link onClick={handleClose}  href="/">About</Nav.Link></Link>
-                                <Link className='link'  to={'/Experience'}><Nav.Link onClick={handleClose} href="/Experience">Experience</Nav.Link></Link>
+                                <Link className='link'  to={'/Resume'}><Nav.Link onClick={handleClose} href="/Resume">Resume</Nav.Link></Link>
                                 <Link className='link' to={"/Contact"}><Nav.Link onClick={handleClose} href="/Contact">Contact</Nav.Link></Link>
+                                
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
@@ -56,7 +57,7 @@ export default function POverlayNav() {
             </Navbar>
             <Routes exact path='/'>
                 <Route path='/' element={<PAbout />} />
-                <Route path='/Experience' element={<PExperience />} />
+                <Route path='/Resume' element={<PResume />} />
                 <Route path="/Contact" element={<PContact />} />
             </Routes>
             {/*

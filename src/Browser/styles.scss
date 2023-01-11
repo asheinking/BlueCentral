@@ -66,3 +66,17 @@ h1 {
     height:100vh !important;
     width:100vw;
 }
+
+.notepad {
+    width:100vw;
+    height:95vh;
+    background-color:white;
+}
+
+.pixel {
+    width:5px;
+    height:5px;
+    background-color:purple;
+    position:absolute;
+    border-radius:90%;
+}
