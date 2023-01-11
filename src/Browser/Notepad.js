@@ -1,60 +1,45 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useCallback, useEffect } from 'react';
 import './styles.scss'
 
 export default function Notepad() {
-    
+
     let inputElement = React.useRef()
 
-    let drag = false
-    /*
-    document.addEventListener(
-        'mousedown', () => dragging = false);
-  
-    document.addEventListener(
-        'mousemove', () => {
-            dragging = true
-            while(dragging){
+    const [pixels, setBit] = useState([]);
 
-            }
-        });
-  
-    document.addEventListener(
-        'mouseup', () => console.log(
-            dragging ? 'drag' : 'click'));
-*/
+    const drag = React.useRef(false);
 
-    
+    var dragList = []
 
-    const [pixels, setBit] = useState([])
-   
-    function dragStart  (e)  {
-        //drag = true;
-        while(drag){
-           //inputElement.current.click()
-        }
+    function dragStart(e) {
+        drag.current = true;
+        placePixel(e.clientX, e.clientY)
+        document.addEventListener(
+            'mousemove', async (event) => {
+                if (drag.current === true) {
+                    console.log(event)
+                    placePixel(event.clientX, event.clientY);
+                    console.log(pixels)
+                }
+            });
     };
 
     function dragFinish() {
-        drag = false;
-    }
-    
-    function placePixel  (event)  {
-        console.log(event)
-        setBit([
-            ...pixels,
-            {
-                x: event.clientX,
-                y: event.clientY
-            }
-        ]);
-        console.log(pixels)
+        drag.current = false;
+        console.log("YOU ARE NO LONGER DRAGGIN!")
+        setBit([...pixels, ...dragList])
+        dragList = []
+        document.removeEventListener('mousemove', placePixel);
     }
 
-   
-    return(
-        <div className="notepad" ref={inputElement} onMouseDown={dragStart} onMouseUp={dragFinish} onClick={placePixel} >
-            {pixels.map( (pixel) =>
-                <div style={{left: pixel.x - 3, top: pixel.y - 3}} className="pixel"></div>
+    async function placePixel(x, y) {
+        dragList.push({x,y})
+    }
+
+    return (
+        <div className="notepad" ref={inputElement} onMouseDown={dragStart} onMouseUp={dragFinish} >
+            {pixels.map((pixel) =>
+                <div style={{ left: pixel.x - 3, top: pixel.y - 3 }} className="pixel"></div>
             )}
         </div>
     )
