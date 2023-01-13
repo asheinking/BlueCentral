@@ -71,6 +71,7 @@ h1 {
     width:100vw;
     height:95vh;
     background-color:white;
+    z-index:900;
 }
 
 .pixel {
@@ -79,4 +80,22 @@ h1 {
     background-color:purple;
     position:absolute;
     border-radius:90%;
+    pointer-events: none;
+    z-index:1000;
+}
+
+.pixel.description {
+    pointer-events:none;
+}
+
+.resetButton {
+    margin:1%;
+    z-index:2600;
+    position:relative;
+}
+
+.radioButtons {
+    z-index:2800;
+    margin:1%;
+    
 }
