@@ -16,10 +16,10 @@ export default function OverlayNav() {
                     <Navbar.Brand href="/">AH</Navbar.Brand>
                         
                     <Nav className="me-auto">
-                        <Link className='link' to={'/'}><Nav.Link className="link"href="/">About</Nav.Link></Link>
-                        <Link to={'/Resume'}><Nav.Link href="/Resume">Resume</Nav.Link></Link>
-                        <Link to={"/Contact"}><Nav.Link href="/Contact">Contact</Nav.Link></Link>
-                        <Link to={"/Notepad"}><Nav.Link href="/Notepad">Notepad</Nav.Link></Link>
+                        <Nav.Link as={Link} className="link" to="/">About</Nav.Link>
+                        <Nav.Link as={Link} to="/Resume">Resume</Nav.Link>
+                        <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/Notepad">Notepad</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
